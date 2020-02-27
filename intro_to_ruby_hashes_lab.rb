@@ -4,7 +4,7 @@ def new_hash
 end
 
 def my_hash
-  new_hash = {
+ {
     key: 2,
     key2: 4,
   }
