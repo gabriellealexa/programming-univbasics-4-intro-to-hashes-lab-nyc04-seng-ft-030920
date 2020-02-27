@@ -1,12 +1,12 @@
 def new_hash
-  new_hash = hash.new
+  new_hash = {}
   return new_hash
 end
 
 def my_hash
   new_hash = {
-    key: value,
-    key2: value2,
+    key: 2,
+    key2: 4,
   }
   return new_hash
 end
@@ -26,19 +26,21 @@ end
 
 def my_hash_creator(key, value)
   new_hash = {
-    key: value,
+    :key => value,
   }
   return new_hash 
 end
 
 def read_from_hash(hash, key)
-  puts hash[:key]
+  return hash[:key]
 end
 
 def update_counting_hash(hash, key)
   if hash[:key]
-    hash[:key] +=1 
+    hash[:key] +=1
+    return hash 
   else
-    hash[:key] = 1 
+    hash[:key] = 1
+    return hash
 end
 end 
