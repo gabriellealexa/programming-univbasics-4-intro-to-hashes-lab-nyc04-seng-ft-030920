@@ -1,5 +1,6 @@
 def new_hash
-  new_hash = hash.new 
+  new_hash = hash.new
+  return new_hash
 end
 
 def my_hash
@@ -7,6 +8,7 @@ def my_hash
     key: value,
     key2: value2,
   }
+  return new_hash
 end
 
 def pioneer
