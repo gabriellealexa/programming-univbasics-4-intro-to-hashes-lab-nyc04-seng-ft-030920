@@ -9,10 +9,7 @@ def my_hash
 end
 
 def pioneer
-  new_hash = {
-    name: "Grace Hopper",
-    age: 5,
-  }
+  {name: "Grace Hopper",age: 5}
 end
 
 def id_generator
